@@ -32,9 +32,8 @@
 //***********************task3*********************
 
 // function checkAge() {
-//         let userAge = prompt("Enter your age:", "");
-
-//         if (userAge === "") {
+//         let userAge = prompt("Enter your age:");
+//         if (userAge.charAt()===' ') {
 //             throw new Error("The field is empty! Please enter your age");
 //         }else if(isNaN(userAge)){
 //             throw new Error("Value is not a number");
@@ -95,22 +94,26 @@
 //             break;
 //         } 
 //     }else if (month>12 || month<1){
-//         throw new MountException("Incorrect month number");
+//         try{
+//             throw new MountException("Incorrect month number");
+//         }catch(exception){
+//             console.log(exception)
+//         }   
 //     }else if (isNaN(month)){
-//         throw new MountException("Value is not a number");
+//         try{
+//             throw new MountException("Value is not a number");   
+//         }catch(exception){
+//             console.log(exception)
+//         }    
 //     }
 // }
 
-// try{
-// showMonthName();    
-// }catch(exception){
-//     console.log(exception)
-// }
-    
-// showMonthName(12);
-// showMonthName(14);
+// showMonthName(0);    
+// showMonthName(1);    
+// showMonthName(2);    
+// showMonthName("q");    
 
-//***********************task5*********************
+// ***********************task5*********************
 
 // function showUser(id){
 //     let user = {id};
@@ -125,10 +128,6 @@
 //         return user;
 //     }
 // }
-// console.log(showUser(-1));
-// console.log(showUser(0));
-// console.log(showUser(1));
-
 
 // function showUsers(ids){
 //     let users = [];
